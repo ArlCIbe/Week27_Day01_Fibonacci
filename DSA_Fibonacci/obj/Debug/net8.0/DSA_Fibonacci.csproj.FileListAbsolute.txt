@@ -1,0 +1,15 @@
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\bin\Debug\net8.0\DSA_Fibonacci.exe
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\bin\Debug\net8.0\DSA_Fibonacci.deps.json
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\bin\Debug\net8.0\DSA_Fibonacci.runtimeconfig.json
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\bin\Debug\net8.0\DSA_Fibonacci.dll
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\bin\Debug\net8.0\DSA_Fibonacci.pdb
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\DSA_Fibonacci.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\DSA_Fibonacci.AssemblyInfoInputs.cache
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\DSA_Fibonacci.AssemblyInfo.cs
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\DSA_Fibonacci.csproj.CoreCompileInputs.cache
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\DSA_Fibonacci.sourcelink.json
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\DSA_Fibonacci.dll
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\refint\DSA_Fibonacci.dll
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\DSA_Fibonacci.pdb
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\DSA_Fibonacci.genruntimeconfig.cache
+C:\Users\arlci\Documents\DEV\Module4\Week27\Week27_Day01_Fibonacci\DSA_Fibonacci\obj\Debug\net8.0\ref\DSA_Fibonacci.dll
