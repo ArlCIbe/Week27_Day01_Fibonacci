@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
+using System.Diagnostics;
 
 namespace DSA_Fibonacci
 {
@@ -7,22 +8,52 @@ namespace DSA_Fibonacci
         static void Main(string[] args)
         {
             FibSeq();
+            
+            string fibJSPath = "recursion.js";
+            ProcessStartInfo runJSInCInfo = new();
+            {
+                FileName = "node";
+                Arguments = fibJSPath;
+                RedirectStandardOutput = true;
+                UseShellExecute = false;
+                CreateNoWindow = true;
+            };
+
+            using Process runJSInCProcess = new();
+            runJSInCProcess.StartInfo = runJSInCInfo;
+            runJSInCProcess.Start();
+
+            //reads recursion.js output
+            string recursionJSOutput = runJSInCProcess.StandardOutput.ReadToEnd();
+            runJSInCProcess.WaitForExit();
+
+            Console.WriteLine("Output from JavaScript:");
+            Console.WriteLine(recursionJSOutput);
         }
 
         public static void FibSeq()
         {
             int prevFib1 = 0;
+            
             int prevFib2 = 1;
 
             for(int i = 0; i < 18; i++)
             {
                 int newFib = prevFib1 + prevFib2;
-                Console.WriteLine($"{newFib}");
+
+                Console.Write($"{newFib} ");
+
                 prevFib1 = prevFib2;
                 prevFib2 = newFib;
                 newFib = prevFib1 + prevFib2;
             }
         }
+        
+        private static string? FileName;
+        private static string? Arguments;
+        private static bool RedirectStandardOutput;
+        private static bool UseShellExecute;
+        private static bool CreateNoWindow;
     }
 }
 /*
