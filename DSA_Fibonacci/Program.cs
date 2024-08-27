@@ -10,11 +10,13 @@ namespace DSA_Fibonacci
             FibSeq();
             
             string fibJSPath = "recursion.js";
+
             ProcessStartInfo runJSInCInfo = new();
             {
-                FileName = "node";
+                FileName = "node";//Configures it to run script w/ node.js
                 Arguments = fibJSPath;
-                RedirectStandardOutput = true;
+                RedirectStandardOutput = true;//Captures recursion.js output so it can be read/displayed in console app
+                //manage how process is executed and how its output is handled(?)
                 UseShellExecute = false;
                 CreateNoWindow = true;
             };
@@ -27,7 +29,6 @@ namespace DSA_Fibonacci
             string recursionJSOutput = runJSInCProcess.StandardOutput.ReadToEnd();
             runJSInCProcess.WaitForExit();
 
-            Console.WriteLine("Output from JavaScript:");
             Console.WriteLine(recursionJSOutput);
         }
 
@@ -61,4 +62,5 @@ namespace DSA_Fibonacci
 - A for loop that runs 18 times
 - Create new Fibonacci numbers by adding the two previous ones
 - Print the new Fibonacci number
-- Update the variables that hold the previous two fibonacci numbers*/
+- Update the variables that hold the previous two fibonacci numbers
+*/
