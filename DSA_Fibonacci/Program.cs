@@ -49,6 +49,8 @@ namespace DSA_Fibonacci
                 prev1 = prev2;
                 prev2 = newFib;
             }
+
+            Console.WriteLine();
         }
     }
 }
