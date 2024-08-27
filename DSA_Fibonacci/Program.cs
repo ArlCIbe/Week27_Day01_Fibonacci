@@ -11,17 +11,17 @@ namespace DSA_Fibonacci
             
             string fibJSPath = "recursion.js";
 
-            ProcessStartInfo runJSInCInfo = new();
+            ProcessStartInfo runJSInCInfo = new ProcessStartInfo()
             {
-                FileName = "node";//Configures it to run script w/ node.js
-                Arguments = fibJSPath;
-                RedirectStandardOutput = true;//Captures recursion.js output so it can be read/displayed in console app
+                FileName = "node", //Configures it to run script w/ node.js
+                Arguments = fibJSPath,
+                RedirectStandardOutput = true,//Captures recursion.js output so it can be read/displayed in console app
                 //manage how process is executed and how its output is handled(?)
-                UseShellExecute = false;
-                CreateNoWindow = true;
+                UseShellExecute = false,
+                CreateNoWindow = true
             };
 
-            using Process runJSInCProcess = new();
+            using Process runJSInCProcess = new Process();
             runJSInCProcess.StartInfo = runJSInCInfo;
             runJSInCProcess.Start();
 
@@ -34,27 +34,22 @@ namespace DSA_Fibonacci
 
         public static void FibSeq()
         {
-            int prevFib1 = 0;
+            int prev1 = 0;
             
-            int prevFib2 = 1;
+            int prev2 = 1;
+
+            Console.WriteLine($"{prev1}\n{prev2}");
 
             for(int i = 0; i < 18; i++)
             {
-                int newFib = prevFib1 + prevFib2;
+                int newFib = prev1 + prev2;
 
-                Console.Write($"{newFib} ");
+                Console.WriteLine($"{newFib}");
 
-                prevFib1 = prevFib2;
-                prevFib2 = newFib;
-                newFib = prevFib1 + prevFib2;
+                prev1 = prev2;
+                prev2 = newFib;
             }
         }
-        
-        private static string? FileName;
-        private static string? Arguments;
-        private static bool RedirectStandardOutput;
-        private static bool UseShellExecute;
-        private static bool CreateNoWindow;
     }
 }
 /*
