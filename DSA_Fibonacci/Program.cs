@@ -7,7 +7,7 @@ namespace DSA_Fibonacci
     {
         static void Main(string[] args)
         {
-            FibSeq();
+            FibSeq();                 
             
             string fibJSPath = "recursion.js";
 
